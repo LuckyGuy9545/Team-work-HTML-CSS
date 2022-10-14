@@ -1,0 +1,176 @@
+.button {
+    border: none;
+    border-radius: 10px;
+    color: $firstColor;
+    background-color: $secondBlockColor;
+    padding: 12px 34px;
+    font-weight: 600;
+    @include font (14px, 18px);
+    transition: color $animationTransition, background-color $animationTransition;
+
+    &__span {
+        @include flexCentral;
+        gap: 8px;
+    }
+
+    &:hover, &:focus {
+        background-color: $hoverBtn;
+    }
+    &:focus {
+        color: $MainbackgroundColor;
+    }
+    &:disabled {
+        background-color: $colorTime;
+    }
+}
+
+.button-contour {
+    border: 2px solid $secondBlockColor;
+    border-radius: 10px;
+    color: $firstColor;
+    font-weight: 600;
+    @include font (14px, 18px);
+    background-color: transparent;
+    transition: color $animationTransition, border $animationTransition;
+
+    &__franchise {
+        padding: 10px 46px;
+    }
+
+}
+
+.button-contour__products {
+    display: block;
+    text-align: center;
+    border: 2px solid $secondBlockColor;
+    border-radius: 8px;
+    color: $firstColor;
+    font-weight: 600;
+    @include font (8px, 10px);
+    height: 24px;
+    background-color: transparent;
+    padding: 5px 12px 4px 12px;
+    transition: color $animationTransition, border $animationTransition;
+}
+
+.button-contour:hover, .button-contour:focus,
+.button-contour__products:hover, .button-contour__products:focus {
+    border: 2px solid $hoverBtn;
+}
+
+.button-contour:focus, .button-contour__products:focus {
+    color: $MainbackgroundColor;
+}
+
+.button-contour:disabled, .button-contour__products:disabled {
+    border: $colorTime;
+}
+
+.button-underline {
+    font-weight: 600;
+    @include font (8px, 10px);
+    text-decoration-line: underline;
+    border: none;
+    color: $secondBlockColor;
+    background-color: transparent;
+    width: 82px;
+    height: 24px;
+    transition: color $animationTransition;
+
+    &:hover {
+        color: $hoverBtn;
+    }
+
+    &:focus {
+        color: $MainbackgroundColor;
+    }
+
+    &:disabled {
+        color: $colorTime;
+    }
+}
+
+.btn-arrow {
+    width: 12px;
+    height: 12px;
+    fill: $firstColor;
+    transition: fill $animationTransition;
+
+    .button:focus &, .button-contour:focus & {
+        fill: $MainbackgroundColor;
+    }
+}
+
+.modal-button {
+    display: inline-block;
+    font-weight: 600;
+    @include font (12px, 15px);
+    color: $firstColor;
+    background-color: $secondBlockColor;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 34px;
+    margin-top: 24px;
+    transition: color $animationTransition, background-color $animationTransition;
+
+    &:hover, &:focus {
+        background-color: $hoverBtn;
+    }
+    &:focus {
+        color: $MainbackgroundColor;
+    }
+    &:disabled {
+        background-color: $colorTime;
+    }
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    
+    &:hover .close-icon, &:focus .close-icon {
+        fill: $secondBlockColor;
+    }
+}
+
+.close-icon {
+    width: 16px;
+    height: 16px;
+    fill: $firstColor;
+    transition: fill $animationTransition;
+}
+
+@media screen and (min-width: 768px) {
+
+    .button-contour__products {
+        padding: 10px 34px;
+        @include font (14px, 18px);
+    }
+
+    .button-underline {
+        @include font (14px, 18px);
+    }
+
+    .modal-button {
+        margin-top: 32px;
+        @include font (14px, 17px);
+    }
+
+    .modal-close-btn {
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .close-icon {
+        width: 20px;
+        height: 20px;
+    }
+}

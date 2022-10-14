@@ -1,0 +1,143 @@
+<!-- Header -->
+<header>
+    <div class="container header__container">
+        <nav class="site-nav">
+            <!-- logo -->
+            <a class="logo" href="#">
+                <picture>
+                    <source srcset="./images/logo-desktop-1x.png 1x,
+                        ./images/logo-desktop@2x.png 2x"
+                        media="(min-width:1200px)">
+                    <source srcset="./images/logo-tablet.png 1x,
+                        ./images/logo-tablet@2x.png 2x"
+                        media="(min-width:768px)">
+
+                    <source srcset="./images/logo-mobile.png 1x,
+                        ./images/logo-mobile@2x.png 2x"
+                        media="(max-width:767px)">
+                    <img src="./images/logo-mobile.png" alt="Logo">
+                </picture>
+            </a>
+            <!-- nav list -->
+            <ul class="site-nav__list">
+                <li class="site-nav__item"><a class="site-nav__link" href="#">Home</a></li>
+                <li class="site-nav__item"><a class="site-nav__link
+                        " href="#about">How it's made?</a></li>
+                <li class="site-nav__item"><a class="site-nav__link
+                        " href="#products">Our products</a></li>
+                <li class="site-nav__item"><a class="site-nav__link
+                        " href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="burger-wrapper">
+            <!-- burger -->
+            <button class="burger-menu" data-menu-button>
+                <span class="burger-menu__item">burger-menu</span>
+            </button>
+            <button class="button header-btn" type="button"
+                data-buy-now-modal-open>
+                <span class="button__span">
+                    Buy now
+                    <svg class="btn-arrow">
+                        <use href="./images/sprite.svg#btn-arrow"></use>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+
+        <h1 class="hero__title ">ice cream
+            made with
+            passion</h1>
+
+        <ul class="hero__button--list">
+            <li>
+                <a class="hero__button--link products-link" href="#products">Products</a>
+            </li>
+            <li>
+                <a class="hero__button--link about-link" href="#about">How it's
+                    made?</a>
+            </li>
+        </ul>
+
+        <div class="hero__info">
+            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button class="hero__arrow btn--servicess" type="button"><img
+                    src="./images/arrow-white.png"
+                    alt=""></button>
+        </div>
+        <ul class="hero__location--list">
+            <li class="hero__location--item">16</li>
+            <li class="hero__location--place cafes">cafes</li>
+            <li class="hero__location--item">23</li>
+            <li class="hero__location--place food-truck">food trucks</li>
+        </ul>
+        <!-- hidden panel -->
+        <div class="panel">
+            <p class="panel-info">I am a student, that's why I should read a lot
+                of books. I like reading. Literature
+                means a
+                lot in my life. It helps me
+                to understand other people better. I often analyze the
+                characters of the books and it helps me to
+                understand the
+                world
+                and myself. I read books by different authors: Russian,
+                Ukrainian, German, and English.
+
+                My favourite Russian writer is Darya Dontsova. She is a popular
+                Russian writer of modern prose. The
+                works of
+                this author
+                are smart and really interesting. According to her own words,
+                her novels are based on real facts. That
+                arouses
+                the
+                reader's interest and provokes their own analysis of the events.
+                When I got acquainted with her books, I
+                was
+                really
+                impressed by her wit and humor. The main characters often find
+                themselves in a difficult situation, but
+                they do
+                not give
+                up and try to find the way out. Some of the characters of her
+                books are mean and jealous. Some of them
+                are
+                deeply
+                feeling, faithful and tender.
+
+                When I read books by my favourite author, Darya Dontsova, I have
+                a feeling that I may meet her
+                characters even
+                in my
+                native town. I always try to watch an interview on TV with Darya
+                Dontsova. She has a happy family that
+                supports
+                her in
+                her work and in difficult situations. She has a strong
+                character, and she is optimistic. Her brain works
+                as a
+                good
+                computer and she knows how to derive benefit from it. I always
+                recommend my friends to read her books.
+            </p>
+            <a class="button-close button">Close</a>
+        </div>
+        <div class="language">
+            <img src="./images/gb.svg" alt="en" data-google-lang="en" width="22"
+                height="15">
+            <img src="./images/de.svg" alt="de" data-google-lang="de"
+                class="language__img" width="22" height="15">
+            <img src="./images/es.svg" alt="es" data-google-lang="es"
+                class="language__img" width="22" height="15">
+            <img src="./images/ua.svg" alt="uk" data-google-lang="uk"
+                class="language__img" width="22" height="15">
+        </div>
+    </div>
+</section>

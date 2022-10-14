@@ -1,0 +1,44 @@
+// visually hidden
+@import './utils/visually-hidden';
+// mixins
+@import './utils/mixins';
+// variables
+@import './utils/variables';
+// normolize
+@import './base/common';
+// global styles
+@import './utils/global-styles';
+// hero - header
+@import './components/hero-header';
+@import './components/mobile-menu';
+// products
+@import './components/products';
+// about
+@import './components/about';
+// advantages
+@import './components/advantages';
+// gallery
+@import './components/gallery';
+// customer-reviews
+@import './components/customer-review';
+// contacts
+@import './components/contacts';
+// footer
+@import './components/footer';
+// modal window common styles
+@import './components/modal-window-common';
+// by now modal
+@import './components/by-now-modal';
+// ice cream modal
+@import './components/ice-cream-modal';
+// about modal
+@import './components/about-modal';
+// locations modal
+@import './components/locations-modal';
+// title site
+@import './components/title-site';
+// buttons
+@import './components/buttons';
+// scroll button
+@import './components/scroll-btn';
+

@@ -1,0 +1,112 @@
+<div class="backdrop is-hidden" data-product-modal-three>
+  <div class="modal big-modal">
+    <button type="button" class="modal-close-btn"
+      data-product-modal-three-close>
+      <svg class="close-icon">
+        <use href="./images/sprite.svg#close-btn"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Chololate icecream</p>
+    <picture class="modal__picture">
+      <source
+        srcset="./images/ch-icecr.jpg 1x, ./images/ch-icecr@2x.jpg 2x"
+        media="(max-width:767px)"
+        />
+      <source
+        srcset="./images/ch-icecr.jpg 1x, ./images/ch-icecr@2x.jpg 2x"
+        media="(min-width:768px)"
+        />
+      <img
+        class="modal__image"
+        src="./images/ch-icecr.jpg"
+        alt="Chololate icecream"
+        />
+    </picture>
+
+    <ul class="modal__list">
+      <li class="modal__list_item">
+        <div class="item__element">
+          <div class="item__element-part">
+            <p class="element-part-text">320</p>
+          </div>
+          <p class="element-part-name">kcal</p>
+        </div>
+      </li>
+      <li class="modal__list_item">
+        <div class="item__element">
+          <div class="item__element-part">
+            <p class="element-part-text">4g</p>
+          </div>
+          <p class="element-part-name">Proteins</p>
+        </div>
+      </li>
+      <li class="modal__list_item">
+        <div class="item__element">
+          <div class="item__element-part">
+            <p class="element-part-text">8,2g</p>
+          </div>
+          <p class="element-part-name">Fats</p>
+        </div>
+      </li>
+      <li class="modal__list_item">
+        <div class="item__element">
+          <div class="item__element-part">
+            <p class="element-part-text">40,4g</p>
+          </div>
+          <p class="element-part-name">Carbs</p>
+        </div>
+      </li>
+    </ul>
+
+    <p class="modal__text">Ingredients</p>
+    <ul class="modal__text-list">
+      <li class="text-list__item">
+        <p class="text-list__item-name">Milk</p>
+        <p class="text-list__item-numbers">100ml</p>
+      </li>
+      <li class="text-list__item">
+        <p class="text-list__item-name">Belgian chocolate</p>
+        <p class="text-list__item-numbers">20g</p>
+      </li>
+      <li class="text-list__item">
+        <p class="text-list__item-name">Cream</p>
+        <p class="text-list__item-numbers">100ml</p>
+      </li>
+      <li class="text-list__item">
+        <p class="text-list__item-name">Cocoa powder</p>
+        <p class="text-list__item-numbers">30g</p>
+      </li>
+      <li class="text-list__item">
+        <p class="text-list__item-name">Sugar</p>
+        <p class="text-list__item-numbers">40g</p>
+      </li>
+      <li class="text-list__item">
+        <p class="text-list__item-name">Vanilla sugar</p>
+        <p class="text-list__item-numbers">10g</p>
+      </li>
+    </ul>
+    <div class="modal-form-wrapper">
+      <form class="modal-form">
+        <div class="modal-form__field">
+          <label class="modal-form__label">
+            <input class="modal-form__input" type="text"
+              pattern="[a-zA-Za-яА-ЯіІїЇ]+" autofocus required
+              placeholder="Name"
+              name="user-name" />
+          </label>
+          <label class="modal-form__label">
+            <input placeholder="Phone" class="modal-form__input" type="tel"
+              required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx" name="user-phone" />
+          </label>
+
+          <label class="modal-form__label modal__form-field-message">
+            <textarea class="modal-form__comment" placeholder="Comment"
+              name="comment"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="modal-button">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

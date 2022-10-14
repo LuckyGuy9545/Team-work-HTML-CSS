@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  top: 0 !important;
+  width: 100%;
+  background-image: url('../images/ice-cream-fon\ 2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: $siteSerif, Arial, Helvetica, sans-serif;
+  color: $firstColor;
+  background-color: $MainbackgroundColor;
+  font-size: 12px;
+  line-height: 1.86;
+  cursor: url(../images/cursur-customs.svg), auto;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.skiptranslate {
+  display: none;
+  height: 0;
+}
+
+.language__img {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: url(../images/cursor-pointer.svg), auto;
+}
+
+label,
+button,
+iframe {
+  cursor: url(../images/cursor-pointer.svg), auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: visibility $animationTransition, opacity $animationTransition;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $MainbackgroundColor;
+  border: 2px solid $secondBlockColor;
+  border-radius: 10px;
+  width: 87.5%;
+  // overflow-y: scroll;
+  transition: transform $animationTransition;
+  opacity: 1;
+  z-index: 1000;
+  padding: 28px 30px;
+}
+
+.small-modal {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 568px;
+    padding: 32px 60px;
+  }
+
+  .big-modal {
+    top: 20px;
+    transform: translateX(-50%);
+  }
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
